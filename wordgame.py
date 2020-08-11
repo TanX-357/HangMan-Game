@@ -40,7 +40,7 @@ def get_available_letters(letters_guessed):
 
 
 
-with open("tann.py", "r") as file:
+with open("list_of_words.txt", "r") as file:
     data = file.readlines()
     for line in data:
         word = line.split()
@@ -105,5 +105,3 @@ while guesses != 0 :
         exit()
 
 print("You ran out of guesses.The word was",secret_word.upper())
-
-
